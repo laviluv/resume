@@ -1,0 +1,31 @@
+h1,h2,h3,h4,h5 {
+    color:darkblue;
+}
+
+a {
+    color: blue;
+}
+a.active {
+    color: darkgreen;
+}
+a.visited{
+    color:cadetblue;
+}
+
+body.cursive {
+    font-family: "Sofia", sans-serif;
+}
+
+body.paragraph {
+    font-family: "Trirong", serif;;
+}
+
+body.emphasis {
+    font-family: "Audiowide", sans-serif;
+}
+
+#table {
+    --bs-table-color: var(--bs-gray-600);
+    --bs-table-bg: var(--bs-gray-100);
+    --bs-table-border-color: blue;
+  }

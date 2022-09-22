@@ -1,0 +1,89 @@
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link  href="http://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery-1.11.3.js"></script>
+<script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+</head>
+<script type="text/javascript">
+$(document).ready(function() {
+  $('#tabs').tabs(); // first tab selected
+  $("#tabs>div a[href^='#']").click(function() {
+    var index = $($(this).attr("href")).index() - 1
+    $("#tabs").tabs("option", "active", index);
+    return false
+  })
+})
+</script>
+<body>
+    
+    <div class="container px-4 px-lg-5">
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">ONE</a></li>
+    <li><a href="#tabs-2">TWO</a></li>
+    <li><a href="#tabs-3">and THREE</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p>This is TAB 1, now is the time.</p>
+    <p><a href="#tabs-3">I
+               want to open tab 3</a></p>
+  </div>
+  <div id="tabs-2">
+    <p>This is TAB 2, now is the time.</p>
+    <p><a href="#tabs-2">I
+               want to open tab 2</a></p>
+  </div>
+  <div id="tabs-3">
+    <p>This is TAB 3, now is the time.</p>
+    <p><a href="#tabs-1">I
+               want to open tab 1</a></p>
+  </div>
+</div>
+
+
+
+<div class="row gx-4 gx-lg-5">
+<div class="col-md-4 mb-5">
+    <div class="card h-100 w-responsive">
+        <div class="card-body">
+            <!-- <img class="card-img-top" src="assets/ai.jpg" alt="Artificial Intelligence"> -->
+            <p class="card-text"></p>
+            <p>Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </p>
+        </div>
+        <div class="card-footer"></div>
+    </div>
+</div>
+
+<div class="col-md-4 mb-5">
+    <div class="card h-100">
+        <div class="card-body">
+            <h2 class="card-title">Software Development</h2>
+            <img class="card-img-top col-mb-6" src="assets/software-development.jpg" alt="Software Development" b>
+            <p class="card-text col-pb-9">&nbsp;</p>
+            <p class="card-text col-pb-9"></p>
+            <p class="card-text col-pt-9">Laravel | C# | PHP | React/Vue</p>
+        </div>
+        <div class="card-footer"><a class="btn btn-primary btn-sm" href="services.html">More Info</a></div>
+    </div>
+</div>
+
+
+<div class="col-md-4 mb-5">
+    <div class="card h-100">
+        <div class="card-body">
+            <h2 class="card-title">Statistics</h2>
+            <img class="card-img-top" src="assets/statistics.jpg" alt="Statistics">
+            <p class="card-text">R | Python | Thesis Guidance</p>
+        </div>
+        <div class="card-footer"><a class="btn btn-primary btn-sm" href="services.html">More Info</a></div>
+    </div>
+</div>
+
+</body>
+</div>
+</div>
+
+
+</body>
+</html>
